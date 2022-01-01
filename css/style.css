@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'GenSekiGothic-R';
+    src: url(/font/GenSekiGothic-R.ttf) format("ttf"),
+         url(/font/GenSekiGothic-R.eot) format("eot"),
+         url(/font/GenSekiGothic-R.woff) format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8E806A;
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 100px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    color: black;
+    background-color: white;
+}
+  
+.active {
+    background-color: #C3B091;
+}
+
+.flex-nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+div {
+    text-align: center;
+    font-family: 'GenSekiGothic-R';
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.top-container {
+    background-color: #e4cda7b2;
+    position: relative;
+    padding-top: 250px;
+}
+
+.middle-container {
+    margin: 100px;
+}
+
+.bottom-container {
+    padding: 50px 0 20px;
+}
+
+hr {
+    border: dotted #C3B091 10px;
+    border-bottom: none;
+    width: 2%;
+    margin: 100px auto;
+  }
+
+.name-table {
+    padding-bottom: 250px;
+    width: 100%;
+}
+
+.rail {
+    width: 150px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.myphoto-img {
+    width: 30%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #C3B091;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    margin-left: -3px;
+}
+  
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+ 
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #8E806A;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+.timeline-content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.right {
+    left: 30%;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.skill-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.skill-table td {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #C3B091;
+}
+
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #8E806A;
+  border: 1px solid transparent;
+  border-radius: .30rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 15px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 170px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #C3B091;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  background-color: #8E806A;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
